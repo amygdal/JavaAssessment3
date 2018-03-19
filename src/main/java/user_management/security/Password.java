@@ -1,17 +1,25 @@
 package user_management.security;
 
+//A class for securly storing passwords using JBcrypt
+
 public class Password {
     private final static int workload = 12;
+    private static Object salt;
+    private String hash;
 
     public Password(String password) {
-        //this.hash = hashPassword(password);
+        this.hash = hashPassword(password);
     }
 
     public static String hashPassword(String password_plaintext) {
-        // salt = generateSalt(workload)
-        // hash = hasher.hash(password, salt)
-        // return hash
+        salt = generateSalt(workload);
+//        hash = hasher.hash(password, salt);
+//        return hash;
+        return null;
 
+    }
+
+    private static Object generateSalt(int workload) {
         return null;
     }
 

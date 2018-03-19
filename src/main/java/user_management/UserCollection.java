@@ -1,8 +1,11 @@
 package user_management;
 
+//A Collection class for storing Users
+
 public class UserCollection {
 
     public User findById(int id) {
+
         return null;
     }
 

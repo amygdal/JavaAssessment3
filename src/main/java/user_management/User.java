@@ -13,4 +13,10 @@ public class User {
     public boolean equals(Object obj) {
         return false;
     }
+
+    public Object getPassword() {
+        Object answerObj = new Object();
+        return answerObj;
+        //need to work on Password class
+    }
 }
